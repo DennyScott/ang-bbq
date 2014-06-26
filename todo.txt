@@ -1,0 +1,8 @@
+Landing Screen -- home
+Login Screen -- login
+Account Creation Screen  --sign up
+Home Screen --dashboard
+Submissions Screen -- submissions
+Picture Details -- submissions/details
+Upload Photo Screen -- upload
+Profile Screen -- profile
