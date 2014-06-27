@@ -2,7 +2,14 @@
 body {
   padding-top: 20px;
   padding-bottom: 20px;
+	background-image:url('../images/dark-wood-board.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	color: #606468;
+ 	font: 87.5%/1.5em 'Open Sans', sans-serif;
+  	margin: 0;
 }
+
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
