@@ -37,17 +37,17 @@
       <div class="footer">
 				<div class="row">
 		<div class="row nav-row footer-nav">
-			<div class="col-xs-3 col-md-2 ">
-				<span class="glyphicon glyphicon-folder-close"></span>
+			<div class="col-xs-3 col-md-2">
+				<span data-location='dashboard' class="glyphicon navigation-button glyphicon-home"></span>
 			</div>
 			<div class="col-xs-3 col-md-2">
-				<span class="glyphicon glyphicon-calendar"></span>
+				<span data-location='recipies' class="glyphicon navigation-button glyphicon-cutlery"></span>
 			</div>
 			<div class="col-xs-3 col-md-2">
-				<span class="glyphicon glyphicon-globe"></span>
+				<span data-location='submissions' class="glyphicon glyphicon-fire navigation-button"></span>
 			</div>
 			<div class="col-xs-3 col-md-2">
-				<span class="glyphicon glyphicon-leaf"></span>
+				<span data-location='upload' class="glyphicon navigation-button glyphicon-camera"></span>
 			</div>
 
 		</div>
@@ -90,6 +90,7 @@
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
+				<script src="scripts/helpers/navigation.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/about.js"></script>
         <script src="scripts/controllers/home.js"></script>
