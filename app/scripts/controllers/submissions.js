@@ -8,16 +8,16 @@
  * Controller of the bbiqApp
  */
 angular.module('bbiqApp')
-  .controller('SubmissionsCtrl', function ($scope) {
+  .controller('SubmissionsCtrl', function ($scope, $location) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
 
-    $( ".food-picture" ).click(function(evt) {
-		alert( 'Insert Handling code for picture Travis!!' );
-	});
+    $scope.productDetails = function () {
+		$location.path('/submissions/details');
+    };
 
 	$( ".upVote" ).click(function() {
 		if($(this).hasClass("btn-primary")){
