@@ -34,7 +34,8 @@ angular.module('bbiqApp')
 	function addUser(cust) {
 		dataFactory.insertUser(JSON.stringify(cust))
 		.success(function (custs) {
-			$location.path('/dashboard')			
+			$rootScope.user = cust;
+			$location.path('/dashboard');			
 		})
 		.error(function (error) {
 			$scope.status = 'There was an issue, please try again.';

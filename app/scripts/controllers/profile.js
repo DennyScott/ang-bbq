@@ -16,7 +16,7 @@ angular.module('bbiqApp')
    function getUser(id) {
        dataFactory.getUser(id)
            .success(function (custs) {
-               $scope.user = custs;
+               $scope.tempuser = custs;
 							 console.log(custs);
            })
            .error(function (error) {
