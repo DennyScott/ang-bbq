@@ -16,7 +16,7 @@ angular.module('bbiqApp')
     ];
 
     $( ".food-picture" ).click(function(evt) {
-		alert( "Insert Handling code for picture Travis!!" );
+		alert( 'Insert Handling code for picture Travis!!' );
 	});
 
 	$( ".upVote" ).click(function() {

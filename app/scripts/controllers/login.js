@@ -8,10 +8,15 @@
  * Controller of the bbiqApp
  */
 angular.module('bbiqApp')
-  .controller('LoginCtrl', function ($scope) {
+  .controller('LoginCtrl', function ($scope, $location) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
+
+     $scope.submitLogin = function () {
+     	$location.path("/home");
+     }
+
   });

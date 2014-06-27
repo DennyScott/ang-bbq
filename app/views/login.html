@@ -1,1 +1,18 @@
-<p>This is the login view.</p>
+	<div id="header">
+		<img src="../images/ct-large.png" alt="Canadian Tire Logo" class="ct-logo" />
+	</div>
+
+	<div id="login">
+	    <form id="signin-form" ng-submit="submitLogin()" method="get">
+	        
+	        <fieldset class="clearfix">
+	            
+	            <p><span class="fontawesome-user"></span><input type="text" value="Username" onBlur="if(this.value == '') this.value = 'Username'" onFocus="if(this.value == 'Username') this.value = ''" required></p> <!-- JS because of IE support; better: placeholder="Username" -->
+	            <p><span class="fontawesome-lock"></span><input type="password"  value="Password" onBlur="if(this.value == '') this.value = 'Password'" onFocus="if(this.value == 'Password') this.value = ''" required></p> <!-- JS because of IE support; better: placeholder="Password" -->
+	            <input type="submit" value="Sign In">
+
+	        </fieldset>
+
+	    </form>   
+	    <p class="black">Not a member? <a ng-href="/#/signup">Sign up now</a><span class="fontawesome-arrow-right"></span></p>
+	</div>
