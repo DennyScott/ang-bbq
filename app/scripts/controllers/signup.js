@@ -35,6 +35,7 @@ angular.module('bbiqApp')
 		dataFactory.insertUser(JSON.stringify(cust))
 		.success(function (custs) {
 			$rootScope.user = cust;
+			$rootScope.loggedIn = true;
 			$location.path('/dashboard');			
 		})
 		.error(function (error) {

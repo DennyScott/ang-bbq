@@ -5,10 +5,9 @@
 			</div>
         <div class="col-xs-12 col-sm-4 col-md-4">
 {{ user.firstName }}
-                <p></p><i class="glyphicon glyphicon-map-marker"></i> <small><cite title="Source Title">Gotham, United Kingdom  </cite></small>
-            <p> <i class="glyphicon glyphicon-envelope"></i> masterwayne@batman.com
-                <br
-                /> <i class="glyphicon glyphicon-globe"></i> www.supersecretbatcave.com
-                <br /> <i class="glyphicon glyphicon-gift"></i> January 30, 1974</p>
+<p></p><i class="glyphicon glyphicon-map-marker"></i> <small><cite title="Source Title">{{ user.city}}, {{user.province}}  </cite></small>
+<p> <i class="glyphicon glyphicon-envelope"></i> {{user.email}}                <br
+/> <i class="glyphicon glyphicon-globe"></i> {{user.country}}
+<br /> <i class="glyphicon glyphicon-gift"></i> {{user.createdAt}}</p>
         </div>
        			</div>

@@ -17,17 +17,9 @@ angular.module('bbiqApp')
        dataFactory.getUser(id)
            .success(function (custs) {
                $scope.tempuser = custs;
-							 console.log(custs);
            })
            .error(function (error) {
                $scope.status = 'Unable to load user data: ' + error.message;
            });
    }
-
-
-   $scope.awesomeThings = [
-     'HTML5 Boilerplate',
-     'AngularJS',
-     'Karma'
-   ];
  }]);
