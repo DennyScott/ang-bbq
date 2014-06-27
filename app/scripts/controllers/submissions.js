@@ -9,6 +9,7 @@
  */
 angular.module('bbiqApp')
   .controller('SubmissionsCtrl', function ($scope, $location) {
+		$('#content-header').html('Entries');  
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',

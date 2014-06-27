@@ -9,9 +9,5 @@
  */
 angular.module('bbiqApp')
   .controller('AboutCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+		$('#content-header').html('About');    
+	});
