@@ -14,4 +14,6 @@ angular.module('bbiqApp')
       'AngularJS',
       'Karma'
     ];
+
+		$('#content-header').html('Recipes');  
   });
