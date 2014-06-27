@@ -16,8 +16,7 @@
  	'Karma'
  	];
 
- 	$( "#signup-form" ).submit(function(evt) {
- 			// alert('hello');
-            $location.path('#/home');
-    });
+ 	$scope.submitCreate = function () {
+     	$location.path("/home");
+     }
  });

@@ -5,6 +5,8 @@
     <a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
   </div>
 </div>
-  <div class="row upload-submit">
-  	<input type="button" class="btn btn-success upload-submit-button" value="Submit" ng-click="uploadPicture()">
-  </div>
+  <form class="upload-submit">
+  	<input type='text' placeholder="Enter a Title">
+  	<input type="text" placeHolder="Enter a Short Description">
+  	<input type="submit" class="btn btn-success upload-submit-button" value="Submit" ng-submit="uploadPicture()">
+  </form>
