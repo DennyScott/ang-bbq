@@ -20,6 +20,8 @@ angular.module('bbiqApp')
 		$location.path('/submissions/details');
     };
 
+		 new WOW().init();
+
 	$( ".upVote" ).click(function() {
 		if($(this).hasClass("btn-primary")){
 			$(this).removeClass("btn-primary").addClass("btn-danger").html("Remove Vote");
