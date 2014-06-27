@@ -9,6 +9,7 @@
  */
 angular.module('bbiqApp')
   .controller('UploadCtrl', function ($scope) {
+		$('#content-header').html('Upload');  
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',

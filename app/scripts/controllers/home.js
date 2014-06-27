@@ -9,6 +9,7 @@
  */
 angular.module('bbiqApp')
   .controller('HomeCtrl', function ($scope) {
+		$('#content-header').html('Home');  
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',

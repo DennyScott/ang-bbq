@@ -35,7 +35,6 @@ body {
 .footer {
   padding-top: 19px;
   color: #777;
-  border-top: 1px solid #e5e5e5;
 }
 
 /* Customize container */
@@ -138,3 +137,17 @@ body {
 	width:160px;
 	margin-bottom:15px;
 }
+
+.dropdown-area {
+	margin-right:0px;
+}
+
+body > div.container > div.ng-scope > div.col-xs-12.col-sm-10.user-display.ng-scope {
+	padding: 0;
+}
+
+.user-display {
+	margin-bottom:10px;
+}
+
+
