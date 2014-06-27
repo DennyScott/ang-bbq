@@ -23,10 +23,10 @@ angular.module('bbiqApp')
 		 new WOW().init();
 
 	$( ".upVote" ).click(function() {
-		if($(this).hasClass("btn-primary")){
-			$(this).removeClass("btn-primary").addClass("btn-danger").html("Remove Vote");
+		if($(this).parent().hasClass("blue")){
+			$(this).parent().removeClass("blue animated pulse");
 		} else {
-			$(this).removeClass("btn-danger").addClass("btn-primary").html("Up Vote");
+			$(this).parent().addClass("blue animated pulse");
 		}
 	});
 

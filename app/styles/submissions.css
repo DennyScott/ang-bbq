@@ -29,3 +29,15 @@ body > div.container > div.ng-scope > div.row.dropdown-area.ng-scope {
 	margin-bottom: 4%;
 	margin-right:0px;
 }
+
+.upVote {
+	font-size: 1.25em;
+}
+
+.upVote:hover {
+	cursor: pointer;
+}
+
+.likes.blue {
+	color: blue;
+}
