@@ -8,7 +8,7 @@
 * Controller of the bbiqApp
 */
 angular.module('bbiqApp')
- .controller('ProfileCtrl', ['$scope','$http','$rootScope','dataFactory', function ($scope, $http, $rootScope, dataFactory) {
+ .controller('ProfileCtrl', ['$scope','$rootScope','dataFactory', function ($scope, $rootScope, dataFactory) {
                $('#content-header').html('Profile');  
 
    getUser(1);
@@ -17,6 +17,7 @@ angular.module('bbiqApp')
        dataFactory.getUser(id)
            .success(function (custs) {
                $scope.user = custs;
+							 console.log(custs);
            })
            .error(function (error) {
                $scope.status = 'Unable to load user data: ' + error.message;
