@@ -149,4 +149,8 @@ body > div.container > div.ng-scope > div.col-xs-12.col-sm-10.user-display.ng-sc
 	margin-bottom:10px;
 }
 
+.dropdown-menu-right {
+ margin-top: 55px !important;
+}
+
 

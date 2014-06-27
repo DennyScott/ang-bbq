@@ -1,5 +1,6 @@
 <!doctype html>
 <html class="no-js">
+
   <head>
     <meta charset="utf-8">
     <title></title>
@@ -23,26 +24,36 @@
 		<link rel="stylesheet" href="styles/bootstrap.css">
     <link rel="stylesheet" href="styles/jasny-bootstrap.css">
 
-    <!-- endbuild -->
-  </head>
-  <body ng-app="bbiqApp">
+
+  <!-- endbuild -->
+</head>
+<body ng-app="bbiqApp">
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
+      <![endif]-->
 
-    <!-- Add your site or application content here -->
+      <!-- Add your site or application content here -->
 
-			<!-- HEADER HERE -->
-		      <div class="navbar navbar-default top-nav" role='navigation'>
-    <div class="links row">
-      <h3 class="content-header col-xs-9" id="content-header">Upload Picture</h3>
-      <a class="profile-button col-xs-3" ng-href="#/profile"><img src="../images/avatar.jpg" class="img-circle" alt="Placeholder" height='40px'></a>
-  </div>
-</div>
-	<div class="container">
+      <!-- HEADER HERE -->
+      <div class="navbar navbar-default top-nav" role='navigation'>
+        <div class="links row">
+          <h3 class="content-header col-xs-9" id="content-header"></h3>
+          <div class="dropdown">
 
-			<!-- END OF HEADER -->
-      <div ng-view=""></div>
+            <a class="profile-button col-xs-3" data-toggle="dropdown" id="dropdownMenu1"><img src="../images/avatar.jpg" class="img-circle" alt="Placeholder" height='40px'></a>
+            <ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="dropdownMenu1">
+              <li role="presentation"><a role="menuitem" tabindex="-1" ng-href="#/profile">My Profile</a></li>
+              <li role="presentation" class="divider"></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" ng-href="#/login">Log Out</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+
+       <!-- END OF HEADER -->
+       <div ng-view=""></div>
+
 
 			<!-- FOOTER HERE -->
       <div class="footer">
@@ -61,23 +72,24 @@
 				<span data-location='upload' class="glyphicon navigation-button glyphicon-camera"></span>
 			</div>
 
-		</div>
+
+        </div>
+      </div>
     </div>
-             </div>
-		</div>
-			<!-- END OF FOOTER -->
+  </div>
+  <!-- END OF FOOTER -->
 
 
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
-     <script>
-       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+ })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-       ga('create', 'UA-XXXXX-X');
-       ga('send', 'pageview');
-    </script>
+ ga('create', 'UA-XXXXX-X');
+ ga('send', 'pageview');
+ </script>
 
     <!--[if lt IE 9]>
     <script src="bower_components/es5-shim/es5-shim.js"></script>
@@ -118,3 +130,7 @@
         <!-- endbuild -->
 </body>
 </html>
+
+  </body>
+  </html>
+
