@@ -114,3 +114,27 @@ body {
 	padding-top: 10px;
 	font-size: 40px;
 }
+
+.profile-button {
+	margin-top:15px;
+	margin-bottom:10px;
+}
+
+.top-nav > .links {
+	margin-left:0px;
+	margin-right:0px;
+}
+
+.profile-image {
+	margin: 0 auto;
+}
+
+.profile-page {
+	margin:0 auto;
+	text-align:center;
+} 
+
+.profile-center-image {
+	width:160px;
+	margin-bottom:15px;
+}
